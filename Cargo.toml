@@ -1,6 +1,6 @@
 [package]
-name = "lirays-python"
-version = "0.1.0"
+name = "lirays"
+version = "0.1.2"
 edition = "2021"
 rust-version = "1.85"
 description = "Python bindings for the LiRAYS SCADA Rust client"
@@ -18,7 +18,7 @@ crate-type = ["cdylib"]
 
 [dependencies]
 futures-util = "0.3"
-lirays = "0.1.2"
+lirays_rust = { package = "lirays", version = "0.1.2" }
 lirays-scada-proto = "0.1.4"
 pyo3 = { version = "0.22.6", features = ["extension-module", "abi3-py39"] }
 tokio = { version = "1.50", features = ["rt-multi-thread", "sync", "time"] }

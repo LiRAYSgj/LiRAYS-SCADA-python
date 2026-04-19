@@ -5,8 +5,8 @@ use std::sync::{mpsc, Arc, Mutex};
 use std::time::Duration;
 
 use futures_util::StreamExt;
-use lirays::types::errors::ClientError;
-use lirays::{
+use lirays_rust::types::errors::ClientError;
+use lirays_rust::{
     BooleanVar as RsBooleanVar, Client as RsClient, ConnectionOptions as RsConnectionOptions,
     FloatVar as RsFloatVar, IntegerVar as RsIntegerVar, TextVar as RsTextVar,
     VariableMetadataPatch as RsVariableMetadataPatch,
