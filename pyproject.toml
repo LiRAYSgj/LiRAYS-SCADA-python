@@ -1,0 +1,42 @@
+[build-system]
+requires = ["maturin>=1.7,<2"]
+build-backend = "maturin"
+
+[project]
+name = "lirays"
+version = "0.1.0"
+description = "Python client for LiRAYS SCADA, backed by the Rust lirays crate"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "LiRAYS" }]
+maintainers = [{ name = "LiRAYS" }]
+license = { text = "MIT" }
+keywords = ["scada", "industrial", "websocket", "protobuf", "lirays", "rust", "python"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: System :: Monitoring",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Rust",
+  "License :: OSI Approved :: MIT License",
+  "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://github.com/LiRAYSgj/LiRAYS-SCADA-python"
+Repository = "https://github.com/LiRAYSgj/LiRAYS-SCADA-python"
+Issues = "https://github.com/LiRAYSgj/LiRAYS-SCADA-python/issues"
+
+[tool.maturin]
+python-source = "python"
+module-name = "lirays._lirays"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
